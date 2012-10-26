@@ -9,7 +9,18 @@ class Simavr < Formula
   depends_on 'libelf'
 
   def install
+    ENV.delete 'CFLAGS'
+    ENV.delete 'CXXFLAGS'
+    ENV.delete 'LD'
+    ENV.delete 'CC'
+    ENV.delete 'CXX'
+    
+    if MacOS.lion?
+      ENV['CC'] = 'clang'
+    end
+
     system 'make build-simavr install'
+
   end
 end
 
