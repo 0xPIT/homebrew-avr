@@ -1,7 +1,7 @@
 require 'formula'
 
 class Simavr < Formula
-  homepage 'hhttp://gitorious.org/simavr/pages/Home'
+  homepage 'http://gitorious.org/simavr/pages/Home'
   head 'http://gitorious.org/simavr/simavr/archive-tarball/master'
 
   depends_on '0xPIT/avr/avr-gcc'
@@ -14,12 +14,13 @@ class Simavr < Formula
     ENV.delete 'LD'
     ENV.delete 'CC'
     ENV.delete 'CXX'
-    
+
     if MacOS.lion?
       ENV['CC'] = 'clang'
     end
 
-    system 'make build-simavr install'
+    system 'make build-simavr'
+    system 'make install'
 
   end
 end
