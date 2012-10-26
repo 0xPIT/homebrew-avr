@@ -9,7 +9,7 @@ class Simavr < Formula
   depends_on 'libelf'
 
   def install
-    system 'make all'
+    system 'make build-simavr install'
   end
 end
 
