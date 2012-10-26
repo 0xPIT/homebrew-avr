@@ -1,6 +1,6 @@
 require 'formula'
 
-class SimAvr < Formula
+class Simavr < Formula
   homepage 'hhttp://gitorious.org/simavr/pages/Home'
   head 'http://gitorious.org/simavr/simavr/archive-tarball/master'
 
