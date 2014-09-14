@@ -10,7 +10,7 @@ end
 class AvrGcc < Formula
   homepage 'http://gcc.gnu.org'
   url 'http://ftp.gnu.org/gnu/gcc/gcc-4.9.1/gcc-4.9.1.tar.bz2'
-  md5 'fddf71348546af523353bd43d34919c1'
+  sha256 'd334781a124ada6f38e63b545e2a3b8c2183049515a1abab6d513f109f1d717e'
 
   depends_on '0xPIT/avr/avr-binutils'
   depends_on 'gmp'

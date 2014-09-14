@@ -3,7 +3,7 @@ require 'formula'
 class AvrBinutils < Formula
   url 'http://ftp.gnu.org/gnu/binutils/binutils-2.24.tar.bz2'
   homepage 'http://www.gnu.org/software/binutils/binutils.html'
-  md5 'e0f71a7b2ddab0f8612336ac81d9636b'
+  sha256 'e5e8c5be9664e7f7f96e0d09919110ab5ad597794f5b1809871177a0f0f14137'
 
   def options
     [["--disable-libbfd", "Disable installation of libbfd."]]

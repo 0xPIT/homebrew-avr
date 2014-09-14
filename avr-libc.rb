@@ -3,7 +3,7 @@ require 'formula'
 class AvrLibc < Formula
   url 'http://download.savannah.gnu.org/releases/avr-libc/avr-libc-1.8.1.tar.bz2'
   homepage 'http://www.nongnu.org/avr-libc/'
-  md5 '0caccead59eaaa61ac3f060ca3a803ef'
+  sha256 'c3062a481b6b2c6959dc708571c00b0e26301897ba21171ed92acd0af7c4a969' 
 
   depends_on '0xPIT/avr/avr-gcc'
 
