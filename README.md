@@ -6,17 +6,18 @@ AVR is a popular family of microcontrollers, used for example in the [Arduino](h
 
 Current Versions
 ----------------
-- gcc 4.9.1
-- binutils 2.24
-- avr-libc 1.8.1
+- gcc 4.9.1 ( min)
+- avr-libc 1.8.1 ( min)
+- binutils 2.24 (2.6 min)
 
-Dependencies: 'gmp', 'libmpc', 'mpfr' will be installed with gcc.
+Dependencies: 'gmp', 'libmpc', 'mpfr', will be installed with gcc.
+In parentheses: Build times on a Mac Book Air with i7 1.8GHz CPU.
 
 Installing Homebrew-avr Formulae
 --------------------------------
 Just `brew tap 0xPIT/avr` and then `brew install <formula>`.
 
-To install the entire AVR toolchain, do:
+To install the entire AVR toolchain, run:
 `brew install avr-libc`
 
 This will pull in the prerequisites avr-binutils and avr-gcc.

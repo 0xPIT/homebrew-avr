@@ -59,6 +59,8 @@ class AvrGcc < Formula
             "--bindir=#{bin}",
             # This shouldn't be necessary
             "--with-as=/usr/local/bin/avr-as"
+            "--disable-install-libiberty",
+            "--enable-fixed-point"
            ]
 
     # The C compiler is always built, C++ can be disabled
@@ -75,11 +77,11 @@ class AvrGcc < Formula
 
       system 'make install'
 
-      multios = `gcc --print-multi-os-dir`.chomp
-
+      #multios = '.' 
+      # multios = `gcc --print-multi-os-dir`.chomp
       # binutils already has a libiberty.a. We remove ours, because
       # otherwise, the symlinking of the keg fails
-      File.unlink "#{prefix}/lib/#{multios}/libiberty.a"
+      # File.unlink "#{prefix}/lib/#{multios}/libiberty.a"
 
     end
   end
