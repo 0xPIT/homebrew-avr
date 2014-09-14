@@ -58,7 +58,7 @@ class AvrGcc < Formula
             # ...and the binaries...
             "--bindir=#{bin}",
             # This shouldn't be necessary
-            "--with-as=/usr/local/bin/avr-as"
+            "--with-as=/usr/local/bin/avr-as",
             "--disable-install-libiberty",
             "--enable-fixed-point"
            ]
