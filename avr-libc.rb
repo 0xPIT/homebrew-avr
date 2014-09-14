@@ -1,9 +1,9 @@
 require 'formula'
 
 class AvrLibc < Formula
-  url 'http://download.savannah.gnu.org/releases/avr-libc/avr-libc-1.8.0.tar.bz2'
+  url 'http://download.savannah.gnu.org/releases/avr-libc/avr-libc-1.8.1.tar.bz2'
   homepage 'http://www.nongnu.org/avr-libc/'
-  md5 '54c71798f24c96bab206be098062344f'
+  md5 '0caccead59eaaa61ac3f060ca3a803ef'
 
   depends_on '0xPIT/avr/avr-gcc'
 
